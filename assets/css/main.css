@@ -7,22 +7,34 @@ body{
 }
 .container{
   padding-top: 50px;
-  padding-right: 20px;
+  /*padding-right: 20px;*/
   padding-bottom: 50px;
-  padding-left: 20px;
+  /*padding-left: 20px;*/
 }
 
 .wrapper {
   padding-top: 20px;
   padding-bottom: 20px;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 33% 33% 33%;
   grid-column-gap: 1em;
   grid-row-gap: 2em;
 }
 
 .wrapper div{
   margin: 0 auto;
+}
+
+
+.btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary:visited,
+    .btn-outline-primary:active:hover, .btn-outline-primary.active:hover {
+    background-color: white !important;
+    color: black;
+}
+
+.btn-outline-primary{
+  border-color: white;
+  color: white;
 }
 
 h1{

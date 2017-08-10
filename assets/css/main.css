@@ -16,7 +16,7 @@ body{
   padding-top: 20px;
   padding-bottom: 20px;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 50% 50%;
   grid-column-gap: 1em;
   grid-row-gap: 2em;
 }
@@ -25,10 +25,18 @@ body{
   margin: 0 auto;
 }
 
+#select{
+  width: 200px;
+  height: 70px;
+  display: block;
+  margin: 20px auto;
+}
+
 
 .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary:visited,
     .btn-outline-primary:active:hover, .btn-outline-primary.active:hover {
     background-color: white !important;
+    border-color: white;
     color: black;
 }
 

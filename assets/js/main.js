@@ -21,7 +21,6 @@ $("#select").click(function(){
       if(!exists){
         selected.push(results[i]);
         html+="<div class='card' style='width: 25rem; margin: 20px auto'><img class='card-img-top' src='"+info[results[i]].img+"' alt='Card image cap'><div class='card-block'><h4 class='card-title'>"+info[results[i]].name+"</h4><p class='card-text'>"+info[results[i]].text+"</p><a href='"+info[results[i]].link+"' class='btn btn-primary'>Wikipedia Article</a></div></div>"
-        //html+='<p>'+results[i]+'</p>'
       }
     }
   });
@@ -29,8 +28,8 @@ $("#select").click(function(){
   $('#myModal').on('shown.bs.modal', function() {
     $('#myModal').find('.modal-body').append(html);
   });
-  $("#myModal").modal('show');
 
+  $("#myModal").modal('show');
 });
 
 $(".close").click(function(){
@@ -53,13 +52,13 @@ var info = {
   "totoro":{
     name: 'My Neighbor Totoro',
     img: 'http://static.tvtropes.org/pmwiki/pub/images/totorogang.png',
-    text: 'Dummy Text',
+    text: 'My Neighbor Totoro is a 1988 Japanese animated fantasy film written and directed by Hayao Miyazaki and produced by Studio Ghibli. The film tells the story of the two young daughters (Satsuki and Mei) of a professor and their interactions with friendly wood spirits in postwar rural Japan',
     link: 'https://en.wikipedia.org/wiki/My_Neighbor_Totoro'
   },
   "kiki":{
     name: "Kiki's Delivery Service",
     img: 'http://wallpapersin4k.net/wp-content/uploads/2017/02/Kikis-Delivery-Service-Movie-Wallpapers-3.jpg',
-    text: 'Dummy Text',
+    text: "Kiki's Delivery Service is a 1989 fantasy anime produced by Studio Ghibli and written, produced, and directed by Hayao Miyazaki as an adaptation of the 1985 novel of the same name by Eiko Kadono. The film tells the story of a young witch, Kiki, who moves to a new town and uses her flying ability to earn a living.",
     link: 'https://en.wikipedia.org/wiki/Kiki%27s_Delivery_Service'
   },
   "ponyo":{
@@ -152,8 +151,5 @@ var info = {
     text: 'Dummy Text',
     link: 'https://en.wikipedia.org/wiki/Porco_Rosso'
   },
-
-
-
 
 }
